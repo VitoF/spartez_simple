@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Spartez Simple</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/style.min.css">
+    </head>
+    <body>
+        <main>
+            <div class="component_tabs">
+                <ul>
+                    <li>
+                        <input type="radio" name="spartez_tabs_item" checked="checked" id="spartez_tabs_newest"/>
+                        <label class="spartez_tabs_item_label" for="spartez_tabs_newest">Newest</label>
+                        <div class="spartez_tabs_item_content">
+                            {% include "swig/no_img.html" %}
+                            {% include "swig/yes_img.html" %}
+                            {% include "swig/no_img.html" %}
+                            {% include "swig/yes_img.html" %}
+                            {% include "swig/no_img.html" %}
+                            {% include "swig/no_img.html" %}
+                        </div>
+                    </li>
+                    <li>
+                        <input type="radio" name="spartez_tabs_item" id="spartez_tabs_mostpopular"/>
+                        <label class="spartez_tabs_item_label" for="spartez_tabs_mostpopular">Most popular</label>
+                        <div class="spartez_tabs_item_content">
+                            {% include "swig/yes_img.html" %}
+                            {% include "swig/no_img.html" %}
+                            {% include "swig/yes_img.html" %}
+                            {% include "swig/no_img.html" %}
+                            {% include "swig/yes_img.html" %}
+                            {% include "swig/no_img.html" %}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </body>
+</html>

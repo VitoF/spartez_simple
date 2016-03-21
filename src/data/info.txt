@@ -1,0 +1,9 @@
+This is a simplest version of the test task and Here's no super features can be found, just HTML5 and CSS3 (LESS) and their own things.
+AND NO JAVASCRIPT!
+
+But anyway, I used Gulp to build it and gulp server plugin to see it.
+
+So, all you need is write down in command line: <npm install> - you need node and npm installed;
+                                                <gulp>
+                                                
+It uses port :1209 (localhost:1209)

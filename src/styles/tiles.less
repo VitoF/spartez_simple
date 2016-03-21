@@ -1,0 +1,163 @@
+.tile_item{
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    text-align: left;
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 0 50px 50px 0;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.5);
+    vertical-align: top;
+    overflow: hidden;
+    
+    @media (min-width: 940px){
+        &:nth-child(3n){
+            margin: 0 0 50px 0;
+        }
+    }
+    @media (min-width: 620px) and (max-width: 939px){
+        &:nth-child(2n){
+            margin: 0 0 50px 0;
+        }
+    }
+    @media (max-width: 619px){
+        margin: 0 auto 50px;
+        display: block;
+    }
+    
+    &.no_img{        
+        padding: 10px 0;
+    
+        .tile_item_title{
+            line-height: 20px;
+            max-height: 40px;
+            overflow: hidden;
+            font-size: 18px;
+            padding: 0 16px;
+        }
+
+        .tile_item_date{
+            line-height: 20px;
+            max-height: 20px;
+            overflow: hidden;
+            color: #c0c1c3;
+            font-size: 12px;
+            padding: 0 16px;
+        }
+
+        .tile_item_text{
+            line-height: 17px;
+            height: 102px;
+            overflow: hidden;
+            font-size: 16px;
+            margin: 18px 0 0;
+            padding: 0 16px;
+        }
+        .tile_item_footer{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            height: 47px;
+            box-sizing: border-box;
+            border-top: 2px solid #f8f8fa;
+        }
+        .tile_item_votes{
+            float: left;
+            line-height: 41px;
+            padding: 0 0 0 16px;
+            font-size: 12px;
+            color: #e27e1e;
+            &:before{
+                content: ' ';
+                font-size: 0;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-image: url("../images/star.png");
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                position: relative;
+                top: 4px;
+                margin: 0 7px 0 0;
+            }
+            &:after{
+                content: 'votes';
+                margin: 0 0 0 4px;
+            }
+        }
+        .tile_item_subject{
+            float: right;
+            line-height: 41px;
+            padding: 0 16px 0 0;
+            font-size: 12px;
+            color: #c8c9cb;
+        }
+    }
+    
+    &.yes_img{
+        .tile_item_image{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 250px;
+            z-index: 0;
+        }
+        .tile_item_title{
+            position: relative;
+            display: table-cell;
+            vertical-align: bottom;
+            height: 216px;
+            font-size: 16px;
+            padding: 10px 16px 0;
+            box-sizing: border-box;
+            color: #fff;
+            line-height: 17px;
+            z-index: 1;
+            text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);
+        }
+        .tile_item_date{
+            z-index: 1;
+            line-height: 32px;
+            max-height: 20px;
+            overflow: hidden;
+            color: rgba(255,255,255,0.7);
+            font-size: 12px;
+            padding: 0 16px;
+            float: left;
+            position: relative;
+            text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);
+            
+        }
+        .tile_item_votes{
+            z-index: 1;
+            color: rgba(255, 255, 255, 0.7);
+            position: relative;
+            float: right;
+            padding: 0 0 0 16px;
+            font-size: 12px;
+            margin: 0 16px 0 0;
+            text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);
+            &:before{
+                content: ' ';
+                font-size: 0;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-image: url("../images/star.png");
+                background-position: -20px 0;
+                background-repeat: no-repeat;
+                position: relative;
+                top: 4px;
+                margin: 0 7px 0 0;
+            }
+            &:after{
+                content: 'votes';
+                margin: 0 0 0 4px;
+                text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9);
+            }}
+    }
+}
